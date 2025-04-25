@@ -29,7 +29,7 @@ def meetup(agent_listing: tuple) -> list:
         A list of Agents with their 'category' field changed according to the result
         of the meeting.
     """
-from itertools import islice
+    from itertools import islice
     
     def process_pair(a, b):
         """Process a pair of agents meeting and return the resulting agents."""
@@ -96,4 +96,3 @@ from itertools import islice
     result.extend(non_meeting_agents)
     
     return result
-    
